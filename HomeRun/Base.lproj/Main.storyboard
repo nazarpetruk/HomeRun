@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Current RunVC-->
         <scene sceneID="MR8-9C-eA7">
             <objects>
-                <viewController id="rHA-04-uVl" sceneMemberID="viewController">
+                <viewController id="rHA-04-uVl" customClass="CurrentRunVC" customModule="HomeRun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NzD-Vw-Tah">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
                                 </subviews>
                             </stackView>
                             <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCg-sH-7d4">
-                                <rect key="frame" x="0.0" y="306" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="318" width="375" height="176"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-iV-qLC">
@@ -153,15 +153,15 @@
                                 <rect key="frame" x="256" y="653" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-p6-YfG">
-                                <rect key="frame" x="54.666666666666657" y="662" width="57" height="57"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Fb-4TG">
                                 <rect key="frame" x="132.66666666666666" y="675" width="99.666666666666657" height="31.333333333333371"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-CondensedBold" family="American Typewriter" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-p6-YfG">
+                                <rect key="frame" x="54.666666666666657" y="662" width="57" height="57"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -181,7 +181,7 @@
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="centerY" secondItem="NzD-Vw-Tah" secondAttribute="centerY" id="VN9-8e-KyG"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="leading" secondItem="gIb-Dy-EQA" secondAttribute="leading" id="Vat-pV-o6F"/>
                             <constraint firstItem="bq1-Fb-4TG" firstAttribute="centerY" secondItem="VFA-iV-qLC" secondAttribute="centerY" id="Y4a-VM-HlZ"/>
-                            <constraint firstItem="YCg-sH-7d4" firstAttribute="top" secondItem="t2J-ah-cnT" secondAttribute="bottom" constant="8" id="YAW-Db-ZZR"/>
+                            <constraint firstItem="YCg-sH-7d4" firstAttribute="top" secondItem="t2J-ah-cnT" secondAttribute="bottom" constant="20" id="YAW-Db-ZZR"/>
                             <constraint firstItem="k4a-hp-F4h" firstAttribute="centerX" secondItem="NzD-Vw-Tah" secondAttribute="centerX" id="dVd-2A-vXf"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="trailing" secondItem="gIb-Dy-EQA" secondAttribute="trailing" id="lKq-vI-axb"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="centerX" secondItem="NzD-Vw-Tah" secondAttribute="centerX" id="mMy-8D-3gz"/>
@@ -189,13 +189,17 @@
                             <constraint firstItem="VFA-iV-qLC" firstAttribute="leading" secondItem="3tI-p6-YfG" secondAttribute="trailing" constant="-65" id="sBG-VP-gHD"/>
                             <constraint firstItem="k4a-hp-F4h" firstAttribute="centerY" secondItem="NzD-Vw-Tah" secondAttribute="centerY" id="tEt-1K-bmv"/>
                             <constraint firstItem="VFA-iV-qLC" firstAttribute="top" secondItem="jtD-TS-PDe" secondAttribute="bottom" constant="61.329999999999998" id="vLD-bo-sMF"/>
-                            <constraint firstItem="jtD-TS-PDe" firstAttribute="top" secondItem="YCg-sH-7d4" secondAttribute="bottom" constant="8" id="wXZ-ZB-IPN"/>
+                            <constraint firstItem="jtD-TS-PDe" firstAttribute="top" secondItem="YCg-sH-7d4" secondAttribute="bottom" constant="20" id="wXZ-ZB-IPN"/>
                             <constraint firstItem="MN2-RT-ILt" firstAttribute="centerY" secondItem="VFA-iV-qLC" secondAttribute="centerY" id="z0z-ST-yYk"/>
                             <constraint firstItem="gIb-Dy-EQA" firstAttribute="trailing" secondItem="t2J-ah-cnT" secondAttribute="trailing" constant="100" id="zRJ-c7-wPk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gIb-Dy-EQA"/>
                     </view>
                     <navigationItem key="navigationItem" id="rF6-KC-F1M"/>
+                    <connections>
+                        <outlet property="sliderImgView" destination="3tI-p6-YfG" id="pGo-2R-dxQ"/>
+                        <outlet property="swipeBGimageView" destination="VFA-iV-qLC" id="eK5-ii-Gt1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0p-DP-bmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
