@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class CurrentRunVC: LocationVC {
     
@@ -14,6 +15,17 @@ class CurrentRunVC: LocationVC {
     
     @IBOutlet weak var swipeBGimageView: UIImageView!
     @IBOutlet weak var sliderImgView: UIImageView!
+    @IBOutlet weak var runDurationLbl: UILabel!
+    @IBOutlet weak var speedLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    
+//MARK: VARS&LETS
+    var startLoc : CLLocation!
+    var lastLoc : CLLocation!
+    
+    var distance = 0.0
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +34,24 @@ class CurrentRunVC: LocationVC {
         sliderImgView.addGestureRecognizer(swipeGesture)
         sliderImgView.isUserInteractionEnabled = true
         swipeGesture.delegate = self as? UIGestureRecognizerDelegate
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
+        manager?.distanceFilter = 10
+        startRun()
+    }
+    
+//MARK: IBAction
+    @IBAction func pauseBtnTapped(_ sender: Any) {
+    }
+    
+    
+    func startRun() {
+        manager?.startUpdatingLocation()
+    }
+    func endRun() {
+        manager?.startUpdatingLocation()
     }
     
     @objc func finishRunSwiped(sender : UIPanGestureRecognizer) {
@@ -49,4 +78,23 @@ class CurrentRunVC: LocationVC {
         }
     }
 
+}
+//MARK: Extensions
+extension CurrentRunVC : CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            checkLocationAuthStatus()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if startLoc == nil {
+            startLoc = locations.first
+        }else if let location = locations.last {
+            distance += lastLoc.distance(from: location)
+            distanceLbl.text = "\(distance)"
+        }
+        lastLoc = locations.last
+    }
 }

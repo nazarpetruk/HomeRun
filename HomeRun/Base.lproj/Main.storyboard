@@ -97,23 +97,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:03:24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2J-ah-cnT">
-                                <rect key="frame" x="100" y="251.66666666666666" width="175" height="46.333333333333343"/>
+                                <rect key="frame" x="100" y="282.33333333333331" width="175" height="46.333333333333314"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jtD-TS-PDe">
-                                <rect key="frame" x="125" y="514" width="125" height="77.666666666666629"/>
+                                <rect key="frame" x="145.66666666666666" y="483.33333333333331" width="83.666666666666657" height="108.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6P-0j-cjW">
-                                        <rect key="frame" x="20.666666666666657" y="0.0" width="83.666666666666671" height="23.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 /m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOo-e8-vAA">
-                                        <rect key="frame" x="0.0" y="31.333333333333375" width="125" height="46.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOo-e8-vAA">
+                                        <rect key="frame" x="11" y="31.333333333333318" width="62" height="46.333333333333343"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO3-31-OWa">
+                                        <rect key="frame" x="26" y="85.666666666666686" width="32" height="22.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -134,8 +140,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OA-1R-Z68">
-                                        <rect key="frame" x="43.333333333333343" y="77.666666666666629" width="26.666666666666671" height="23.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OA-1R-Z68">
+                                        <rect key="frame" x="33.666666666666657" y="77.666666666666629" width="45.666666666666657" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -143,7 +149,7 @@
                                 </subviews>
                             </stackView>
                             <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCg-sH-7d4">
-                                <rect key="frame" x="0.0" y="318" width="375" height="176"/>
+                                <rect key="frame" x="0.0" y="348.66666666666669" width="375" height="114.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endRunOutline" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-iV-qLC">
@@ -152,6 +158,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-RT-ILt">
                                 <rect key="frame" x="256" y="653" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseBtnTapped:" destination="rHA-04-uVl" eventType="touchUpInside" id="pOg-pg-ZBB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Fb-4TG">
                                 <rect key="frame" x="132.66666666666666" y="675" width="99.666666666666657" height="31.333333333333371"/>
@@ -168,11 +177,9 @@
                             <constraint firstItem="gIb-Dy-EQA" firstAttribute="bottom" secondItem="VFA-iV-qLC" secondAttribute="bottom" constant="50" id="082-Ue-upk"/>
                             <constraint firstItem="gIb-Dy-EQA" firstAttribute="trailing" secondItem="mF8-Sx-nc0" secondAttribute="trailing" id="2xx-vS-Bpc"/>
                             <constraint firstItem="t2J-ah-cnT" firstAttribute="leading" secondItem="gIb-Dy-EQA" secondAttribute="leading" constant="100" id="C2H-Tv-35m"/>
-                            <constraint firstItem="gIb-Dy-EQA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="jtD-TS-PDe" secondAttribute="trailing" constant="125" id="CT8-mS-fRV"/>
                             <constraint firstItem="gIb-Dy-EQA" firstAttribute="bottom" secondItem="mF8-Sx-nc0" secondAttribute="bottom" constant="-34" id="CXt-ch-Euh"/>
                             <constraint firstItem="Md7-kx-afu" firstAttribute="top" secondItem="gIb-Dy-EQA" secondAttribute="top" constant="12" id="Dw8-GR-OWe"/>
-                            <constraint firstItem="jtD-TS-PDe" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gIb-Dy-EQA" secondAttribute="leading" constant="125" id="Dxs-TF-0xQ"/>
-                            <constraint firstItem="jtD-TS-PDe" firstAttribute="centerX" secondItem="Md7-kx-afu" secondAttribute="centerX" id="ET5-8K-mOP"/>
+                            <constraint firstItem="VFA-iV-qLC" firstAttribute="top" secondItem="jtD-TS-PDe" secondAttribute="bottom" constant="61.333333333333371" id="EKO-Bg-ASR"/>
                             <constraint firstItem="3tI-p6-YfG" firstAttribute="centerY" secondItem="VFA-iV-qLC" secondAttribute="centerY" id="Ghu-7U-tFC"/>
                             <constraint firstItem="MN2-RT-ILt" firstAttribute="leading" secondItem="VFA-iV-qLC" secondAttribute="trailing" constant="-22.666666666666629" id="K7H-O0-JeY"/>
                             <constraint firstItem="bq1-Fb-4TG" firstAttribute="centerX" secondItem="VFA-iV-qLC" secondAttribute="centerX" constant="20" id="MBJ-nP-Rz8"/>
@@ -180,16 +187,17 @@
                             <constraint firstItem="mF8-Sx-nc0" firstAttribute="leading" secondItem="gIb-Dy-EQA" secondAttribute="leading" id="TsY-rJ-ZWD"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="centerY" secondItem="NzD-Vw-Tah" secondAttribute="centerY" id="VN9-8e-KyG"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="leading" secondItem="gIb-Dy-EQA" secondAttribute="leading" id="Vat-pV-o6F"/>
+                            <constraint firstItem="jtD-TS-PDe" firstAttribute="centerX" secondItem="Md7-kx-afu" secondAttribute="centerX" id="WNS-Zp-OYa"/>
                             <constraint firstItem="bq1-Fb-4TG" firstAttribute="centerY" secondItem="VFA-iV-qLC" secondAttribute="centerY" id="Y4a-VM-HlZ"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="top" secondItem="t2J-ah-cnT" secondAttribute="bottom" constant="20" id="YAW-Db-ZZR"/>
                             <constraint firstItem="k4a-hp-F4h" firstAttribute="centerX" secondItem="NzD-Vw-Tah" secondAttribute="centerX" id="dVd-2A-vXf"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="trailing" secondItem="gIb-Dy-EQA" secondAttribute="trailing" id="lKq-vI-axb"/>
                             <constraint firstItem="YCg-sH-7d4" firstAttribute="centerX" secondItem="NzD-Vw-Tah" secondAttribute="centerX" id="mMy-8D-3gz"/>
+                            <constraint firstItem="jtD-TS-PDe" firstAttribute="top" secondItem="YCg-sH-7d4" secondAttribute="bottom" constant="20" id="ndM-WO-Mv8"/>
                             <constraint firstItem="mF8-Sx-nc0" firstAttribute="top" secondItem="gIb-Dy-EQA" secondAttribute="top" constant="-44" id="ngc-c6-SYb"/>
+                            <constraint firstItem="jtD-TS-PDe" firstAttribute="centerX" secondItem="NzD-Vw-Tah" secondAttribute="centerX" id="ods-0p-Gpt"/>
                             <constraint firstItem="VFA-iV-qLC" firstAttribute="leading" secondItem="3tI-p6-YfG" secondAttribute="trailing" constant="-65" id="sBG-VP-gHD"/>
                             <constraint firstItem="k4a-hp-F4h" firstAttribute="centerY" secondItem="NzD-Vw-Tah" secondAttribute="centerY" id="tEt-1K-bmv"/>
-                            <constraint firstItem="VFA-iV-qLC" firstAttribute="top" secondItem="jtD-TS-PDe" secondAttribute="bottom" constant="61.329999999999998" id="vLD-bo-sMF"/>
-                            <constraint firstItem="jtD-TS-PDe" firstAttribute="top" secondItem="YCg-sH-7d4" secondAttribute="bottom" constant="20" id="wXZ-ZB-IPN"/>
                             <constraint firstItem="MN2-RT-ILt" firstAttribute="centerY" secondItem="VFA-iV-qLC" secondAttribute="centerY" id="z0z-ST-yYk"/>
                             <constraint firstItem="gIb-Dy-EQA" firstAttribute="trailing" secondItem="t2J-ah-cnT" secondAttribute="trailing" constant="100" id="zRJ-c7-wPk"/>
                         </constraints>
@@ -197,7 +205,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="rF6-KC-F1M"/>
                     <connections>
+                        <outlet property="distanceLbl" destination="kOo-e8-vAA" id="C6Z-7z-qrV"/>
+                        <outlet property="runDurationLbl" destination="t2J-ah-cnT" id="76d-d2-Csg"/>
                         <outlet property="sliderImgView" destination="3tI-p6-YfG" id="pGo-2R-dxQ"/>
+                        <outlet property="speedLbl" destination="FgN-XJ-2pj" id="SHt-zZ-Wo6"/>
                         <outlet property="swipeBGimageView" destination="VFA-iV-qLC" id="eK5-ii-Gt1"/>
                     </connections>
                 </viewController>
