@@ -16,6 +16,7 @@
 		4489B7BE237B029F00DA3362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BD237B029F00DA3362 /* Assets.xcassets */; };
 		4489B7C1237B029F00DA3362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BF237B029F00DA3362 /* LaunchScreen.storyboard */; };
 		448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */; };
+		448F6448237C88C300B7AC45 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6447237C88C300B7AC45 /* Extansions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4489B7C0237B029F00DA3362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4489B7C2237B029F00DA3362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
+		448F6447237C88C300B7AC45 /* Extansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		4489B7B1237B029C00DA3362 /* HomeRun */ = {
 			isa = PBXGroup;
 			children = (
+				448F6446237C88A900B7AC45 /* Extensions */,
 				4489B7CA237B035100DA3362 /* Controller */,
 				4489B7C9237B034900DA3362 /* View */,
 				4489B7C8237B033E00DA3362 /* Model */,
@@ -98,6 +101,14 @@
 				448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		448F6446237C88A900B7AC45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				448F6447237C88C300B7AC45 /* Extansions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				4489B7B9237B029C00DA3362 /* RunHistoryVC.swift in Sources */,
 				4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */,
 				4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */,
+				448F6448237C88C300B7AC45 /* Extansions.swift in Sources */,
 				448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */,
 				4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */,
 			);
