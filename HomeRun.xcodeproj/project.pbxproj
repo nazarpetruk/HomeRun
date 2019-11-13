@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4410A48F237C474100F80880 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410A48E237C474100F80880 /* LocationVC.swift */; };
 		4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B2237B029C00DA3362 /* AppDelegate.swift */; };
 		4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B4237B029C00DA3362 /* SceneDelegate.swift */; };
 		4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B6237B029C00DA3362 /* BeginRunVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4410A48E237C474100F80880 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		4489B7AF237B029C00DA3362 /* HomeRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4489B7B2237B029C00DA3362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4489B7B4237B029C00DA3362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		4489B7CA237B035100DA3362 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4410A48E237C474100F80880 /* LocationVC.swift */,
 				4489B7B6237B029C00DA3362 /* BeginRunVC.swift */,
 				4489B7B8237B029C00DA3362 /* RunHistoryVC.swift */,
 			);
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4410A48F237C474100F80880 /* LocationVC.swift in Sources */,
 				4489B7B9237B029C00DA3362 /* RunHistoryVC.swift in Sources */,
 				4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */,
 				4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */,
