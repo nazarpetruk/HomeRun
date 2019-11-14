@@ -27,6 +27,8 @@ class CurrentRunVC: LocationVC {
     var count = 0
     var timer = Timer()
     
+    var pace = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +76,12 @@ class CurrentRunVC: LocationVC {
         
     }
     
+//MARK: Func for pace
+    func calculatePace(time inSeconds: Int , distance inKm: Double) -> String {
+        pace = Int(Double(inSeconds) / inKm)
+        return pace.timeFormatter()
+    }
+    
 //MARK: Swiping Func
     @objc func finishRunSwiped(sender : UIPanGestureRecognizer) {
         let min : CGFloat = 80
@@ -115,6 +123,9 @@ extension CurrentRunVC : CLLocationManagerDelegate {
         }else if let location = locations.last {
             distance += lastLoc.distance(from: location)
             distanceLbl.text = "\(distance.mIntoKm(decimalNums: 3))"
+            if count > 0 && distance > 0 {
+                speedLbl.text = calculatePace(time: count, distance: distance.mIntoKm(decimalNums: 2))
+            }
         }
         lastLoc = locations.last
     }
