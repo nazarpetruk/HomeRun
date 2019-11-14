@@ -157,6 +157,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-RT-ILt">
                                 <rect key="frame" x="256" y="653" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="bVS-Hn-wmb"/>
+                                    <constraint firstAttribute="height" constant="75" id="fxw-sK-Roj"/>
+                                </constraints>
                                 <state key="normal" image="pauseButton"/>
                                 <connections>
                                     <action selector="pauseBtnTapped:" destination="rHA-04-uVl" eventType="touchUpInside" id="pOg-pg-ZBB"/>
@@ -206,6 +210,7 @@
                     <navigationItem key="navigationItem" id="rF6-KC-F1M"/>
                     <connections>
                         <outlet property="distanceLbl" destination="kOo-e8-vAA" id="C6Z-7z-qrV"/>
+                        <outlet property="pauseBtn" destination="MN2-RT-ILt" id="PLh-cm-sj7"/>
                         <outlet property="runDurationLbl" destination="t2J-ah-cnT" id="76d-d2-Csg"/>
                         <outlet property="sliderImgView" destination="3tI-p6-YfG" id="pGo-2R-dxQ"/>
                         <outlet property="speedLbl" destination="FgN-XJ-2pj" id="SHt-zZ-Wo6"/>

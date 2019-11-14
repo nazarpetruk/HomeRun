@@ -18,6 +18,7 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var runDurationLbl: UILabel!
     @IBOutlet weak var speedLbl: UILabel!
     @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: UIButton!
     
 //MARK: VARS&LETS
     var startLoc : CLLocation!
@@ -47,18 +48,31 @@ class CurrentRunVC: LocationVC {
     
 //MARK: IBAction
     @IBAction func pauseBtnTapped(_ sender: Any) {
-        
+        if timer.isValid {
+            pauseRun()
+        }else{
+            startRun()
+        }
     }
     
 //MARK: Func for Run
     func startRun() {
         manager?.startUpdatingLocation()
         startTimer()
+        pauseBtn.setImage(UIImage(named: "pauseButton"), for: .normal)
     }
     
     func endRun() {
         manager?.startUpdatingLocation()
-        stopTimer()
+//        stopTimer()
+    }
+    
+    func pauseRun() {
+        startLoc = nil
+        lastLoc = nil
+        timer.invalidate()
+        manager?.stopUpdatingLocation()
+        pauseBtn.setImage(UIImage(named: "resumeButton"), for: .normal)
     }
     
 //MARK: Func for timer
@@ -93,7 +107,7 @@ class CurrentRunVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 }else if sliderView.center.x >= (swipeBGimageView.center.x + max){
                     sliderView.center.x = swipeBGimageView.center.x + max
-                    //END RUN CODE
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 }else{
                     sliderView.center.x = swipeBGimageView.center.x - min
