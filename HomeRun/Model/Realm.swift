@@ -33,4 +33,29 @@ class Run : Object{
         self.distance = distance
     }
     
+    static func addFinishedRun(pace : Int, distance : Double, duration : Int) {
+        REALM_QUEUE.sync {
+            let run = Run(pace: pace, distance: distance, duration: duration)
+                do {
+                    let realm = try Realm()
+                    try realm.write {
+                        realm.add(run)
+                        try realm.commitWrite()
+                    }
+                }catch{
+                    debugPrint("Error in run adding")
+                }
+            }
+        }
+    
+    static func getRuns() -> Results<Run>? {
+        do {
+            let realm = try Realm()
+            var runs = realm.objects(Run.self)
+            runs = runs.sorted(byKeyPath: "date", ascending: false)
+            return runs
+        }catch{
+            return nil
+        }
+    }
 }

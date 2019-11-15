@@ -10,6 +10,7 @@
 		005262BF2FD33AE4D8D2FB96 /* Pods_HomeRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4767EA990202E7BBC3B8FCEF /* Pods_HomeRun.framework */; };
 		4410A48F237C474100F80880 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410A48E237C474100F80880 /* LocationVC.swift */; };
 		445C0C58237DD35500DB0532 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C0C57237DD35500DB0532 /* Realm.swift */; };
+		446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B9ED8237F12A3008EBE72 /* Constants.swift */; };
 		4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B2237B029C00DA3362 /* AppDelegate.swift */; };
 		4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B4237B029C00DA3362 /* SceneDelegate.swift */; };
 		4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B6237B029C00DA3362 /* BeginRunVC.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4410A48E237C474100F80880 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		445C0C57237DD35500DB0532 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		446B9ED8237F12A3008EBE72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4489B7AF237B029C00DA3362 /* HomeRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4489B7B2237B029C00DA3362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4489B7B4237B029C00DA3362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		446B9ED7237F1281008EBE72 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				446B9ED8237F12A3008EBE72 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		4489B7A6237B029C00DA3362 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		4489B7B1237B029C00DA3362 /* HomeRun */ = {
 			isa = PBXGroup;
 			children = (
+				446B9ED7237F1281008EBE72 /* Util */,
 				448F6446237C88A900B7AC45 /* Extensions */,
 				4489B7CA237B035100DA3362 /* Controller */,
 				4489B7C9237B034900DA3362 /* View */,
@@ -260,6 +271,7 @@
 				448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */,
 				4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */,
 				445C0C58237DD35500DB0532 /* Realm.swift in Sources */,
+				446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

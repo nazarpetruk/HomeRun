@@ -64,7 +64,8 @@ class CurrentRunVC: LocationVC {
     
     func endRun() {
         manager?.startUpdatingLocation()
-//        stopTimer()
+        Run.addFinishedRun(pace: pace, distance: distance, duration: count)
+
     }
     
     func pauseRun() {
