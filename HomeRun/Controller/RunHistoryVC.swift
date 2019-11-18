@@ -10,11 +10,35 @@ import UIKit
 
 class RunHistoryVC: UIViewController {
 
+    
+//MARK : IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        tableView.delegate = self
+        tableView.dataSource = self
     }
+    
+}
+//MARK: Extensions
 
-
+extension RunHistoryVC : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Run.getRuns()?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell") as? RunCell {
+            guard let run = Run.getRuns()?[indexPath.row] else {
+               return RunCell ()
+            }
+            cell.configurecell(run: run)
+            return cell
+        }else{
+            return RunCell()
+        }
+    }
 }
 

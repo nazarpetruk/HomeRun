@@ -16,7 +16,7 @@ extension Double {
 }
 
 extension Int {
-    func timeFormatter() -> String {
+    func intoStringFormatter() -> String {
         let durationInHours = self / 3600
         let durationInMinutes = (self % 3600) / 60
         let durationInsec = (self % 3600) % 60
@@ -30,5 +30,15 @@ extension Int {
                 return String(format: "%02d:%02d:%02d", durationInHours, durationInMinutes, durationInsec)
             }
         }
+    }
+}
+
+extension NSDate {
+    func reformDateString() -> String {
+        let cal = Calendar.current
+        let month = cal.component(.month, from: self as Date)
+        let day = cal.component(.day, from: self as Date)
+        let year = cal.component(.year, from: self as Date)
+        return "\(day)/\(month)/\(year)"
     }
 }

@@ -78,23 +78,19 @@ class CurrentRunVC: LocationVC {
     
 //MARK: Func for timer
     func startTimer(){
-        runDurationLbl.text = count.timeFormatter()
+        runDurationLbl.text = count.intoStringFormatter()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     
     @objc func updateCounter () {
         count += 1
-        runDurationLbl.text = count.timeFormatter()
-    }
-    
-    func stopTimer(){
-        
+        runDurationLbl.text = count.intoStringFormatter()
     }
     
 //MARK: Func for pace
     func calculatePace(time inSeconds: Int , distance inKm: Double) -> String {
         pace = Int(Double(inSeconds) / inKm)
-        return pace.timeFormatter()
+        return pace.intoStringFormatter()
     }
     
 //MARK: Swiping Func

@@ -11,7 +11,7 @@ import RealmSwift
 
 class Run : Object{
     
-    dynamic public private(set) var id = ""
+    dynamic public private(set) var id : String!
     dynamic public private(set) var pace = 0
     dynamic public private(set) var distance = 0.0
     dynamic public private(set) var duration = 0
@@ -27,10 +27,11 @@ class Run : Object{
     
     convenience init(pace : Int, distance : Double, duration : Int) {
         self.init()
-        self.id = UUID().uuidString.lowercased()
+        self.id = UUID().uuidString
         self.date = NSDate()
         self.pace = pace
         self.distance = distance
+        self.duration = duration
     }
     
     static func addFinishedRun(pace : Int, distance : Double, duration : Int) {
