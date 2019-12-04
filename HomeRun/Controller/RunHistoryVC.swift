@@ -39,6 +39,12 @@ extension RunHistoryVC : UITableViewDelegate, UITableViewDataSource {
             guard let run = Run.getRuns()?[indexPath.row] else {
                return RunCell ()
             }
+            
+//            cell.layer.borderWidth = 2
+//            cell.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+//            cell.layer.cornerRadius = 20
+//            cell.layer.masksToBounds = true
+            
             cell.configurecell(run: run)
             return cell
         }else{

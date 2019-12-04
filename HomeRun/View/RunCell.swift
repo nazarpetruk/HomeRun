@@ -19,6 +19,7 @@ class RunCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
     
     func configurecell(run : Run){
