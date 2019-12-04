@@ -20,6 +20,11 @@ class RunHistoryVC: UIViewController {
         tableView.dataSource = self
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
+    
 }
 //MARK: Extensions
 

@@ -13,6 +13,7 @@ class BeginRunVC: LocationVC {
     
 //MARK: IBOutlet
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var startRunBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,11 @@ class BeginRunVC: LocationVC {
         mapView.layer.cornerRadius = 10
         mapView.layer.masksToBounds = true
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         manager?.delegate = self

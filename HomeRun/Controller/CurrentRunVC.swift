@@ -46,6 +46,11 @@ class CurrentRunVC: LocationVC {
         startRun()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
+    
 //MARK: IBAction
     @IBAction func pauseBtnTapped(_ sender: Any) {
         if timer.isValid {
