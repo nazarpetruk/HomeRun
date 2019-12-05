@@ -22,14 +22,14 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var pauseBtn: UIButton!
     
 //MARK: VARS&LETS
-    var startLoc : CLLocation!
-    var lastLoc : CLLocation!
-    var distance = 0.0
-    var coordinateLocations = List<Location>()
-    var count = 0
-    var timer = Timer()
+    fileprivate var startLoc : CLLocation!
+    fileprivate var lastLoc : CLLocation!
+    fileprivate var distance = 0.0
+    fileprivate var coordinateLocations = List<Location>()
+    fileprivate var count = 0
+    fileprivate var timer = Timer()
     
-    var pace = 0
+    fileprivate var pace = 0
     
     
     override func viewDidLoad() {
@@ -69,7 +69,7 @@ class CurrentRunVC: LocationVC {
     }
     
     func endRun() {
-        manager?.startUpdatingLocation()
+        manager?.stopUpdatingLocation()
         Run.addFinishedRun(pace: pace, distance: distance, duration: count, locations: coordinateLocations)
 
     }
@@ -139,7 +139,7 @@ extension CurrentRunVC : CLLocationManagerDelegate {
             startLoc = locations.first
         }else if let location = locations.last {
             distance += lastLoc.distance(from: location)
-            let newLocation = Location(latitude : Double(lastLoc.coordinate.latitude), longitude: Double(lastLoc.coordinate.latitude))
+            let newLocation = Location(latitude: Double(lastLoc.coordinate.latitude), longitude: Double(lastLoc.coordinate.longitude))
             coordinateLocations.insert(newLocation, at: 0)
             distanceLbl.text = "\(distance.mIntoKm(decimalNums: 3))"
             if count > 0 && distance > 0 {

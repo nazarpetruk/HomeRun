@@ -10,8 +10,8 @@ import Foundation
 import RealmSwift
 
 class Location: Object {
-    @objc dynamic var latitude = 0.0
-    @objc dynamic var longitude = 0.0
+    @objc dynamic public var latitude = 0.0
+    @objc dynamic public var longitude = 0.0
     
     convenience init(latitude: Double, longitude: Double) {
         self.init()
