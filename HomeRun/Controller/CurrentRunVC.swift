@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import RealmSwift
 
 class CurrentRunVC: LocationVC {
     
@@ -24,7 +25,7 @@ class CurrentRunVC: LocationVC {
     var startLoc : CLLocation!
     var lastLoc : CLLocation!
     var distance = 0.0
-    
+    var coordinateLocations = List<Location>()
     var count = 0
     var timer = Timer()
     
@@ -69,7 +70,7 @@ class CurrentRunVC: LocationVC {
     
     func endRun() {
         manager?.startUpdatingLocation()
-        Run.addFinishedRun(pace: pace, distance: distance, duration: count)
+        Run.addFinishedRun(pace: pace, distance: distance, duration: count, locations: coordinateLocations)
 
     }
     
@@ -138,6 +139,8 @@ extension CurrentRunVC : CLLocationManagerDelegate {
             startLoc = locations.first
         }else if let location = locations.last {
             distance += lastLoc.distance(from: location)
+            let newLocation = Location(latitude : Double(lastLoc.coordinate.latitude), longitude: Double(lastLoc.coordinate.latitude))
+            coordinateLocations.insert(newLocation, at: 0)
             distanceLbl.text = "\(distance.mIntoKm(decimalNums: 3))"
             if count > 0 && distance > 0 {
                 speedLbl.text = calculatePace(time: count, distance: distance.mIntoKm(decimalNums: 2))

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		005262BF2FD33AE4D8D2FB96 /* Pods_HomeRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4767EA990202E7BBC3B8FCEF /* Pods_HomeRun.framework */; };
 		4410A48F237C474100F80880 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410A48E237C474100F80880 /* LocationVC.swift */; };
-		445C0C58237DD35500DB0532 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C0C57237DD35500DB0532 /* Realm.swift */; };
+		445C0C58237DD35500DB0532 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C0C57237DD35500DB0532 /* Run.swift */; };
 		446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B9ED8237F12A3008EBE72 /* Constants.swift */; };
 		446B9EDB237F185B008EBE72 /* RunCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B9EDA237F185B008EBE72 /* RunCell.swift */; };
 		4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B2237B029C00DA3362 /* AppDelegate.swift */; };
@@ -21,11 +21,12 @@
 		4489B7C1237B029F00DA3362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BF237B029F00DA3362 /* LaunchScreen.storyboard */; };
 		448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */; };
 		448F6448237C88C300B7AC45 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6447237C88C300B7AC45 /* Extansions.swift */; };
+		44F064B223992C7A00CA3070 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F064B123992C7A00CA3070 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4410A48E237C474100F80880 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
-		445C0C57237DD35500DB0532 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		445C0C57237DD35500DB0532 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		446B9ED8237F12A3008EBE72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		446B9EDA237F185B008EBE72 /* RunCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunCell.swift; sourceTree = "<group>"; };
 		4489B7AF237B029C00DA3362 /* HomeRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +40,7 @@
 		4489B7C2237B029F00DA3362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		448F6447237C88C300B7AC45 /* Extansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
+		44F064B123992C7A00CA3070 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4767EA990202E7BBC3B8FCEF /* Pods_HomeRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68D09EBC18D8BAB2D9622CF /* Pods-HomeRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeRun/Pods-HomeRun.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C31CCB6FE14535F4BDDF29 /* Pods-HomeRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeRun.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeRun/Pods-HomeRun.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,7 +114,8 @@
 		4489B7C8237B033E00DA3362 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				445C0C57237DD35500DB0532 /* Realm.swift */,
+				445C0C57237DD35500DB0532 /* Run.swift */,
+				44F064B123992C7A00CA3070 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4410A48F237C474100F80880 /* LocationVC.swift in Sources */,
+				44F064B223992C7A00CA3070 /* Location.swift in Sources */,
 				4489B7B9237B029C00DA3362 /* RunHistoryVC.swift in Sources */,
 				4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */,
 				446B9EDB237F185B008EBE72 /* RunCell.swift in Sources */,
@@ -274,7 +278,7 @@
 				448F6448237C88C300B7AC45 /* Extansions.swift in Sources */,
 				448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */,
 				4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */,
-				445C0C58237DD35500DB0532 /* Realm.swift in Sources */,
+				445C0C58237DD35500DB0532 /* Run.swift in Sources */,
 				446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
