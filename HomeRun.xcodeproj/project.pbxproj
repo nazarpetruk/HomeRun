@@ -12,14 +12,15 @@
 		445C0C58237DD35500DB0532 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C0C57237DD35500DB0532 /* Run.swift */; };
 		446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B9ED8237F12A3008EBE72 /* Constants.swift */; };
 		446B9EDB237F185B008EBE72 /* RunCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B9EDA237F185B008EBE72 /* RunCell.swift */; };
+		44851DDB239A8D88005B2596 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44851DDA239A8D88005B2596 /* LaunchVC.swift */; };
 		4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B2237B029C00DA3362 /* AppDelegate.swift */; };
 		4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B4237B029C00DA3362 /* SceneDelegate.swift */; };
-		4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B6237B029C00DA3362 /* BeginRunVC.swift */; };
-		4489B7B9237B029C00DA3362 /* RunHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B8237B029C00DA3362 /* RunHistoryVC.swift */; };
+		4489B7B7237B029C00DA3362 /* StartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B6237B029C00DA3362 /* StartingVC.swift */; };
+		4489B7B9237B029C00DA3362 /* RunLegacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489B7B8237B029C00DA3362 /* RunLegacyVC.swift */; };
 		4489B7BC237B029C00DA3362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BA237B029C00DA3362 /* Main.storyboard */; };
 		4489B7BE237B029F00DA3362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BD237B029F00DA3362 /* Assets.xcassets */; };
 		4489B7C1237B029F00DA3362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489B7BF237B029F00DA3362 /* LaunchScreen.storyboard */; };
-		448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */; };
+		448F6445237C4EE700B7AC45 /* OnRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6444237C4EE700B7AC45 /* OnRunVC.swift */; };
 		448F6448237C88C300B7AC45 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448F6447237C88C300B7AC45 /* Extansions.swift */; };
 		44F064B223992C7A00CA3070 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F064B123992C7A00CA3070 /* Location.swift */; };
 /* End PBXBuildFile section */
@@ -29,16 +30,17 @@
 		445C0C57237DD35500DB0532 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		446B9ED8237F12A3008EBE72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		446B9EDA237F185B008EBE72 /* RunCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunCell.swift; sourceTree = "<group>"; };
+		44851DDA239A8D88005B2596 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		4489B7AF237B029C00DA3362 /* HomeRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4489B7B2237B029C00DA3362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4489B7B4237B029C00DA3362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4489B7B6237B029C00DA3362 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
-		4489B7B8237B029C00DA3362 /* RunHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunHistoryVC.swift; sourceTree = "<group>"; };
+		4489B7B6237B029C00DA3362 /* StartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingVC.swift; sourceTree = "<group>"; };
+		4489B7B8237B029C00DA3362 /* RunLegacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLegacyVC.swift; sourceTree = "<group>"; };
 		4489B7BB237B029C00DA3362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4489B7BD237B029F00DA3362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4489B7C0237B029F00DA3362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4489B7C2237B029F00DA3362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
+		448F6444237C4EE700B7AC45 /* OnRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnRunVC.swift; sourceTree = "<group>"; };
 		448F6447237C88C300B7AC45 /* Extansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 		44F064B123992C7A00CA3070 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4767EA990202E7BBC3B8FCEF /* Pods_HomeRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +69,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		446B9ED7237F1281008EBE72 /* Util */ = {
+		446B9ED7237F1281008EBE72 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
 				446B9ED8237F12A3008EBE72 /* Constants.swift */,
 			);
-			path = Util;
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		44851DD8239A8764005B2596 /* Scene Config */ = {
+			isa = PBXGroup;
+			children = (
+				4489B7B4237B029C00DA3362 /* SceneDelegate.swift */,
+				4489B7B2237B029C00DA3362 /* AppDelegate.swift */,
+			);
+			path = "Scene Config";
+			sourceTree = "<group>";
+		};
+		44851DD9239A879C005B2596 /* UI  */ = {
+			isa = PBXGroup;
+			children = (
+				4489B7BA237B029C00DA3362 /* Main.storyboard */,
+				4489B7BF237B029F00DA3362 /* LaunchScreen.storyboard */,
+			);
+			path = "UI ";
 			sourceTree = "<group>";
 		};
 		4489B7A6237B029C00DA3362 = {
@@ -96,16 +116,14 @@
 		4489B7B1237B029C00DA3362 /* HomeRun */ = {
 			isa = PBXGroup;
 			children = (
-				446B9ED7237F1281008EBE72 /* Util */,
+				446B9ED7237F1281008EBE72 /* Constant */,
 				448F6446237C88A900B7AC45 /* Extensions */,
-				4489B7CA237B035100DA3362 /* Controller */,
-				4489B7C9237B034900DA3362 /* View */,
 				4489B7C8237B033E00DA3362 /* Model */,
-				4489B7B2237B029C00DA3362 /* AppDelegate.swift */,
-				4489B7B4237B029C00DA3362 /* SceneDelegate.swift */,
-				4489B7BA237B029C00DA3362 /* Main.storyboard */,
+				4489B7C9237B034900DA3362 /* View */,
+				4489B7CA237B035100DA3362 /* Controller */,
+				44851DD8239A8764005B2596 /* Scene Config */,
+				44851DD9239A879C005B2596 /* UI  */,
 				4489B7BD237B029F00DA3362 /* Assets.xcassets */,
-				4489B7BF237B029F00DA3362 /* LaunchScreen.storyboard */,
 				4489B7C2237B029F00DA3362 /* Info.plist */,
 			);
 			path = HomeRun;
@@ -132,9 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				4410A48E237C474100F80880 /* LocationVC.swift */,
-				4489B7B6237B029C00DA3362 /* BeginRunVC.swift */,
-				4489B7B8237B029C00DA3362 /* RunHistoryVC.swift */,
-				448F6444237C4EE700B7AC45 /* CurrentRunVC.swift */,
+				4489B7B6237B029C00DA3362 /* StartingVC.swift */,
+				4489B7B8237B029C00DA3362 /* RunLegacyVC.swift */,
+				448F6444237C4EE700B7AC45 /* OnRunVC.swift */,
+				44851DDA239A8D88005B2596 /* LaunchVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,11 +270,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HomeRun/Pods-HomeRun-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -271,12 +292,13 @@
 			files = (
 				4410A48F237C474100F80880 /* LocationVC.swift in Sources */,
 				44F064B223992C7A00CA3070 /* Location.swift in Sources */,
-				4489B7B9237B029C00DA3362 /* RunHistoryVC.swift in Sources */,
-				4489B7B7237B029C00DA3362 /* BeginRunVC.swift in Sources */,
+				4489B7B9237B029C00DA3362 /* RunLegacyVC.swift in Sources */,
+				4489B7B7237B029C00DA3362 /* StartingVC.swift in Sources */,
 				446B9EDB237F185B008EBE72 /* RunCell.swift in Sources */,
+				44851DDB239A8D88005B2596 /* LaunchVC.swift in Sources */,
 				4489B7B3237B029C00DA3362 /* AppDelegate.swift in Sources */,
 				448F6448237C88C300B7AC45 /* Extansions.swift in Sources */,
-				448F6445237C4EE700B7AC45 /* CurrentRunVC.swift in Sources */,
+				448F6445237C4EE700B7AC45 /* OnRunVC.swift in Sources */,
 				4489B7B5237B029C00DA3362 /* SceneDelegate.swift in Sources */,
 				445C0C58237DD35500DB0532 /* Run.swift in Sources */,
 				446B9ED9237F12A3008EBE72 /* Constants.swift in Sources */,
@@ -434,7 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarDev.HomeRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -454,7 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarDev.HomeRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
