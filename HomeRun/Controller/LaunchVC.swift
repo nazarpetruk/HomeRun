@@ -15,4 +15,8 @@ class LaunchVC : UIViewController {
            self.performSegue(withIdentifier:"toMain",sender: self)
         })
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

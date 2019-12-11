@@ -80,8 +80,8 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOJ-i7-ec4">
-                                                                <rect key="frame" x="0.0" y="22" width="33.666666666666664" height="18"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOJ-i7-ec4">
+                                                                <rect key="frame" x="0.0" y="22" width="46.666666666666664" height="18"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -240,8 +240,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="k4a-hp-F4h">
                                 <rect key="frame" x="131" y="355.66666666666669" width="113" height="101"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Pace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuX-VK-vyR">
-                                        <rect key="frame" x="11" y="0.0" width="91.333333333333329" height="23.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuX-VK-vyR">
+                                        <rect key="frame" x="24.666666666666657" y="0.0" width="64" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -340,7 +340,7 @@
             </objects>
             <point key="canvasLocation" x="1495" y="-321"/>
         </scene>
-        <!--My log-->
+        <!--Legacy-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="RunLegacyVC" customModule="HomeRun" customModuleProvider="target" sceneMemberID="viewController">
@@ -482,7 +482,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My log" image="list (1)" selectedImage="list (1)" id="cPa-gy-q4n">
+                    <tabBarItem key="tabBarItem" title="Legacy" image="list (1)" selectedImage="list (1)" id="cPa-gy-q4n">
                         <color key="badgeColor" red="0.91764705879999997" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
